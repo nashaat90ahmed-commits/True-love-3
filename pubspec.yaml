@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   
-  # Supabase (البديل المجاني - تم استبدال Firebase)
+  # Supabase
   supabase_flutter: ^2.0.2
   postgrest: ^2.1.0
   gotrue: ^2.8.4
@@ -28,7 +28,7 @@ dependencies:
   image_cropper: ^5.0.1
   flutter_image_compress: ^1.4.3
   
-  # Swipe Cards (ميزات السحب لليمين واليسار)
+  # Swipe Cards
   tcard: ^1.3.2
   flutter_tindercard: ^0.2.1
   
@@ -65,7 +65,7 @@ dependencies:
   # Date Picker
   flutter_datetime_picker_plus: ^2.2.4
   
-  # Geolocation (تحديد الموقع الجغرافي للمطابقة)
+  # Geolocation
   geolocator: ^11.0.0
   geocoding: ^2.1.1
   
@@ -84,6 +84,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  generate: true # أضفت هذا السطر لتفعيل الترجمة التلقائية
   
   assets:
     - assets/images/
@@ -102,7 +103,7 @@ flutter:
         - asset: fonts/Inter-Regular.ttf
         - asset: fonts/Inter-Bold.ttf
           weight: 700
-  
-  flutter_intl:
-    enabled: true
-    
+
+# تم نقل هذا القسم إلى هنا (بداية السطر) لحل مشكلة الخطأ في الصورة
+flutter_intl:
+  enabled: true
