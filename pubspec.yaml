@@ -1,6 +1,5 @@
 name: true_love_app
 description: تطبيق الحب الحقيقي - مواعدة مجانية للمطلقين والمنفصلين والأرامل
-
 version: 1.0.0+1
 
 environment:
@@ -62,8 +61,8 @@ dependencies:
   form_builder_validators: ^9.1.0
   flutter_form_builder: ^9.2.1
   
-  # Date Picker
-  flutter_datetime_picker_plus: ^2.2.4
+  # Date Picker (تم تصحيح الإصدار لحل مشكلة الصورة الأخيرة)
+  flutter_datetime_picker_plus: any
   
   # Geolocation
   geolocator: ^11.0.0
@@ -84,26 +83,13 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  generate: true # أضفت هذا السطر لتفعيل الترجمة التلقائية
+  generate: true
   
   assets:
     - assets/images/
     - assets/icons/
     - assets/animations/
     - assets/translations/
-  
-  fonts:
-    - family: Tajawal
-      fonts:
-        - asset: fonts/Tajawal-Regular.ttf
-        - asset: fonts/Tajawal-Bold.ttf
-          weight: 700
-    - family: Inter
-      fonts:
-        - asset: fonts/Inter-Regular.ttf
-        - asset: fonts/Inter-Bold.ttf
-          weight: 700
 
-# تم نقل هذا القسم إلى هنا (بداية السطر) لحل مشكلة الخطأ في الصورة
 flutter_intl:
   enabled: true
